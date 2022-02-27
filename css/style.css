@@ -376,6 +376,13 @@ body {
   margin: auto;
   padding-left: 20px;
   padding-right: 20px; }
+  .section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin: auto; }
 
 .container {
   max-width: 1420px;
@@ -407,8 +414,8 @@ body {
 
 .main {
   background: #F2F2F2 url(../img/main/bg.png) no-repeat right center;
-  padding-top: 120px;
-  padding-bottom: 120px; }
+  padding-top: 110px;
+  padding-bottom: 110px; }
   .main__button {
     width: 360px;
     margin-bottom: 20px; }
@@ -481,6 +488,23 @@ body {
       margin: 5px 0;
       display: inline-block; }
 
+.trust {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 1px #C4C4C4; }
+  .trust__box {
+    max-width: 630px; }
+  .trust__header {
+    font-weight: 800;
+    font-size: 35px;
+    color: #194EAE;
+    margin-bottom: 30px; }
+  .trust__text {
+    font-size: 28px; }
+  .trust__title {
+    margin-bottom: 80px; }
+
 @media screen and (max-width: 1500px) {
   .main {
     background-position-x: calc( 100% + 200px); } }
@@ -499,10 +523,32 @@ body {
         font-size: 35px; } }
 
 @media screen and (max-width: 1200px) {
+  .trust__box {
+    max-width: 460px; }
+  .trust__header {
+    font-size: 26px;
+    margin-bottom: 20px; }
+  .trust__text {
+    font-size: 22px; }
   .main {
     background: #F2F2F2 url(../img/main/bgC.png) no-repeat right center; } }
 
 @media screen and (max-width: 991px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .section__title {
+      font-size: 22px;
+      margin-bottom: 30px; }
+  .trust__box {
+    max-width: 350px; }
+  .trust__container {
+    max-width: 700px; }
+  .trust__header {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .trust__text {
+    font-size: 16px; }
   .main {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -545,6 +591,17 @@ body {
         font-size: 22px; } }
 
 @media screen and (max-width: 767px) {
+  .trust__container {
+    max-width: 500px; }
+  .trust__row {
+    flex-direction: column; }
+  .trust__box {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: none; }
+  .trust__img {
+    width: 100%;
+    max-width: 500px; }
   .main {
     background: #F2F2F2 url(../img/main/bgM.png) no-repeat right 278px; }
     .main__input-group {
@@ -570,6 +627,12 @@ body {
     display: none; } }
 
 @media screen and (max-width: 575px) {
+  .trust__title {
+    text-align: left; }
+  .trust__container {
+    max-width: 300px; }
+  .trust__img {
+    width: auto; }
   .main__card {
     margin-right: 0;
     margin-bottom: 30px; }
