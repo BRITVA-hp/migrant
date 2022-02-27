@@ -16,6 +16,26 @@
                 font-size: 35px
 
 @media screen and ( max-width: 1200px )
+    .consult
+        &__form
+            max-width: 740px
+            justify-content: center
+            flex-wrap: wrap
+            margin: auto
+            margin-bottom: 15px
+        &__input-group
+            margin-bottom: 20px
+            &:first-child
+                margin-right: 20px
+    
+    .quiz
+        &__box
+            max-width: 570px
+        &__header
+            font-size: 24px
+        &__text
+            font-size: 20px
+
     .trust
         &__box
             max-width: 460px
@@ -29,14 +49,68 @@
         background: #F2F2F2 url(../img/main/bgC.png) no-repeat right center
 
 @media screen and ( max-width: 991px )
-    .section
+    .consult
         padding-top: 40px
         padding-bottom: 40px
+        &__tel
+            font-size: 20px
+            max-width: 440px
+            &__row
+                font-size: 24px
+        &__attention
+            font-size: 14px
+            margin-bottom: 30px
+        &__form
+            margin-bottom: 15px
+        &__input-group
+            width: 100%
+            max-width: 300px
+        &__button
+            font-size: 16px
+            padding: 18px 0
+            width: 100%
+            max-width: 300px
+        &__input
+            font-size: 14px
+            padding: 18px 22px
+        &__input-group
+            margin-bottom: 15px
         &__title
-            font-size: 22px
+            margin-bottom: 5px
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 20px
+
+    .quiz
+        padding-top: 40px
+        padding-bottom: 40px
+        &__container
+            max-width: 700px
+        &__box
+            max-width: 460px
+        &__button
+            font-size: 16px
+            width: 300px
+            padding-left: 60px
+            background-image: url(../img/quiz/arrowM.png)
+            background-position: calc( 100% - 60px ) center
+        &__title
+            margin-bottom: 20px
+            max-width: 480px
+        &__header
+            font-size: 20px
+            margin-bottom: 15px
+        &__text
+            font-size: 16px
             margin-bottom: 30px
 
+    .section
+        &__title
+            font-size: 22px
+
     .trust
+        padding-top: 40px
+        padding-bottom: 40px
         &__box
             max-width: 350px
         &__container
@@ -46,6 +120,8 @@
             margin-bottom: 10px
         &__text
             font-size: 16px
+        &__title
+            margin-bottom: 30px
 
     .main
         padding-top: 50px
@@ -90,6 +166,38 @@
                 font-size: 22px
 
 @media screen and ( max-width: 767px )
+    .consult
+        &__button
+            max-width: none
+        &__container
+            max-width: 500px
+        &__form
+            flex-direction: column
+            align-items: center
+        &__input-group
+            max-width: none
+            margin-right: 0 !important
+
+    .quiz
+        &__box
+            text-align: center
+            margin: auto
+        &__button
+            margin: auto
+            display: block
+            width: 100%
+            max-width: 300px
+        &__container
+            max-width: 500px
+        &__text
+            margin-bottom: 15px
+        &__img
+            display: none
+            &--mob
+                display: block
+                margin: auto
+                margin-bottom: 20px
+
     .trust
         &__container
             max-width: 500px
@@ -131,11 +239,15 @@
             display: none
 
 @media screen and ( max-width: 575px )
+    .consult
+        &__tel
+            flex-direction: column
+            &>span
+                margin-bottom: 5px
+
     .trust
         &__title
             text-align: left
-        &__container
-            max-width: 300px
         &__img
             width: auto
 
