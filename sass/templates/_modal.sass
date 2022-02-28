@@ -1,0 +1,79 @@
+.modal
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 199
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000000, 0.6)
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    overflow: auto
+    transition: 0.3s
+    padding-top: 40px
+    padding-bottom: 40px
+    &--active
+        opacity: 1
+        visibility: visible
+    &-thanks
+        padding: 0
+        &__img
+            display: none
+            margin: auto
+        &__title
+            font-family: 'Montserrat', sans-serif
+            font-weight: 900
+            font-size: 40px
+            color: #194EAE
+            margin-bottom: 40px
+        &__text
+            font-size: 24px
+            margin-bottom: 22px
+        &__tel
+            font-size: 22px
+            max-width: 360px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: auto
+            &__box
+                font-weight: 800
+                font-size: 24px
+                text-decoration: none
+                color: #0D0D0D
+                display: flex
+                align-items: center
+                img
+                    margin-right: 6px
+        &__dialog
+            background: #f2f2f2 url(../img/quiz/bg.png) no-repeat center
+            width: 100%
+            height: 100%
+            position: relative
+            padding-left: 20px
+            padding-right: 20px
+        &__close
+            position: absolute
+            top: 32px
+            right: 44px
+            cursor: pointer
+        &__container
+            max-width: 1320px
+            margin: auto
+            height: 100%
+            width: 100%
+            display: flex
+            align-items: center
+            background: url(../img/thanks/img1.png) no-repeat right bottom
+            &--quiz
+                max-width: 1750px
+                background: url(../img/thanks/img2.png) no-repeat right bottom
+                padding-left: 165px
+        &__box
+            max-width: 650px
+            text-align: center

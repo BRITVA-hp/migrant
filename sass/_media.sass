@@ -1,8 +1,38 @@
+@media screen and ( max-width: 1700px )
+    .modal
+        &-thanks
+            &__container
+                &--quiz
+                    padding-left: 100px
+
+@media screen and ( max-width: 1600px )
+    .modal
+        &-thanks
+            &__container
+                &--quiz
+                    padding-left: 0
+
 @media screen and ( max-width: 1500px )
+    .modal
+        &-thanks
+            &__dialog
+                &--quiz
+                    padding-left: 0
+                    padding-right: 0
+            &__container
+                padding-left: 150px
+                &--quiz
+                    background: url(../img/thanks/img2C.png) no-repeat right bottom
+
     .main
         background-position-x: calc( 100% + 200px )
 
 @media screen and ( max-width: 1300px )
+    .modal
+        &-thanks
+            &__container
+                padding-left: 50px
+
     .main
         padding-top: 80px
         padding-bottom: 80px
@@ -16,6 +46,24 @@
                 font-size: 35px
 
 @media screen and ( max-width: 1200px )
+    .modal
+        &-thanks
+            padding: 20px
+            &__img
+                display: block
+            &__dialog
+                padding-top: 88px
+                height: auto
+                max-width: 500px
+            &__container
+                background: none
+                justify-content: center
+                align-items: flex-start
+                &--quiz
+                    background: none
+                    padding-left: 20px
+                    padding-right: 20px
+
     .consult
         &__form
             max-width: 740px
@@ -29,6 +77,19 @@
                 margin-right: 20px
     
     .quiz
+        &-last
+            &__input-group
+                margin: 10px
+            &__form
+                flex-wrap: wrap
+                justify-content: center
+                align-items: flex-start
+            &__button
+                margin: 10px
+        &-step
+            height: auto
+            min-height: 0
+            max-height: none
         &__box
             max-width: 570px
         &__header
@@ -49,6 +110,41 @@
         background: #F2F2F2 url(../img/main/bgC.png) no-repeat right center
 
 @media screen and ( max-width: 991px )
+    .modal
+        &-thanks
+            &__close
+                top: 10px
+                right: 10px
+            &__title
+                font-size: 30px
+                margin-bottom: 15px
+            &__text
+                font-size: 18px
+                margin-bottom: 10px
+            &__tel
+                font-size: 18px
+                max-width: 290px
+                &__box
+                    font-size: 18px
+
+    .footer
+        &__text
+            font-size: 15px
+
+    .comments
+        padding-top: 40px
+        padding-bottom: 100px
+        &__title
+            margin-bottom: 20px
+        &__card
+            width: 320px
+            height: 400px
+            padding: 45px 10px
+            &__text
+                font-size: 16px
+            &__name
+                font-size: 16px
+
     .consult
         padding-top: 40px
         padding-bottom: 40px
@@ -84,6 +180,53 @@
     .quiz
         padding-top: 40px
         padding-bottom: 40px
+        &-last
+            padding-top: 65px
+            padding-bottom: 65px
+            &__form
+                margin-bottom: 15px
+            &__title
+                margin-bottom: 30px
+            &__subtitle
+                font-size: 16px
+                margin-bottom: 20px
+                max-width: 580px
+            &__input
+                padding: 18px 20px
+                font-size: 14px
+            &__input-group
+                width: 300px
+                margin: 7px
+            &__atention
+                font-size: 14px
+            &__button
+                margin: 7px
+                font-size: 16px
+                width: 300px
+        &-step
+            padding-top: 55px
+            padding-bottom: 55px
+            &__button
+                width: 222px
+                height: 58px
+                font-size: 16px
+                &--back
+                    width: 68px
+                    svg
+                        width: 37px
+            &__box
+                margin-bottom: 20px
+            &__title
+                margin-bottom: 30px
+            &__card
+                width: 300px
+                height: 55px
+                border: 1px solid #C4C4C4
+                box-sizing: border-box
+                box-shadow: 0px 0px 1px #C4C4C4
+                font-size: 14px
+                padding: 0 10px 0 20px
+                margin: 7px
         &__container
             max-width: 700px
         &__box
@@ -166,6 +309,13 @@
                 font-size: 22px
 
 @media screen and ( max-width: 767px )
+    .footer
+        text-align: center
+        &__row
+            flex-direction: column
+        &__logo
+            margin-bottom: 20px
+
     .consult
         &__button
             max-width: none
@@ -239,6 +389,27 @@
             display: none
 
 @media screen and ( max-width: 575px )
+    .quiz
+        &-last
+            &__input-group
+                margin-right: 0
+                margin-left: 0
+
+    .modal
+        &-thanks
+            padding-left: 0
+            padding-right: 0
+            &__tel
+                flex-direction: column
+                &>span
+                    margin-bottom: 5px
+
+    .comments
+        padding-left: 0
+        padding-right: 0
+        &__card
+            margin: 10px 0
+
     .consult
         &__tel
             flex-direction: column

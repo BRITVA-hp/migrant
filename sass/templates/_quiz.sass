@@ -29,3 +29,101 @@
         max-width: 920px
     &__box
         max-width: 720px
+    &-step
+        padding-top: 150px
+        padding-bottom: 150px
+        background: #f2f2f2 url(../img/quiz/bg.png) no-repeat center
+        perspective: 80px
+        background-size: cover
+        height: 100vh
+        min-height: 835px
+        max-height: 900px
+        &__container
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            height: 100%
+        &__button-group
+            display: flex
+            justify-content: center
+        &__button
+            padding: 0
+            height: 60px
+            width: 220px
+            box-shadow: none
+            display: flex
+            align-items: center
+            justify-content: center
+            &:hover
+                box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4)
+                transform: none
+            &--back
+                width: 100px
+        &__box
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            max-width: 1140px
+            margin: auto
+            margin-bottom: 20px
+        &__card
+            width: 360px
+            height: 90px
+            background-color: #FFFFFF
+            border-radius: 5px
+            padding: 0 30px 0 50px
+            display: flex
+            align-items: center
+            cursor: pointer
+            transition: 0.3s
+            margin: 10px
+            &:hover
+                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5)
+            picture
+                margin-right: 20px
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    max-width: none
+        &__title
+            margin-bottom: 80px
+    
+    &-last
+        background: #f2f2f2 url(../img/quiz/bg.png) no-repeat center
+        padding-top: 200px
+        padding-bottom: 200px
+        background-size: cover
+        &__title
+            margin-bottom: 60px
+        &__subtitle
+            font-size: 24px
+            margin: auto
+            margin-bottom: 40px
+            text-align: center
+            max-width: 900px
+        &__form
+            max-width: 1120px
+            display: flex
+            justify-content: space-between
+            margin: auto
+            margin-bottom: 15px
+        &__input
+            border: 1px solid #C4C4C4
+            box-shadow: 0px 0px 1px #C4C4C4
+            border-radius: 5px
+            width: 100%
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            color: #BDBDBD
+            padding: 20px 23px
+            &:focus
+                outline: none
+        &__button
+            width: 360px
+        &__input-group
+            width: 360px
+        &__attention
+            font-size: 16px
+            text-align: center
